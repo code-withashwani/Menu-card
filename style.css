@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+    background:
+        linear-gradient(rgba(35, 24, 17, 0.92), rgba(35, 24, 17, 0.92)),
+        url("C:\Images\images.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: #f8eee2;
+
+    margin: 0;
+}
+
+/* header */
+.header{
+    background: linear-gradient(135deg, #f3dfc5, #ead0ad);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #c9a77e;
+
+    
+}
+
+
+
+.menu {
+  
+    padding: 0px 10px ;
+    margin: 0 auto ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+
+ 
+}
+ .menu .Title{
+   
+  font-size: 38px;
+  font-weight: bold;
+    font-family: Georgia, serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.menu h1{
+  
+
+     font-size: 34px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+
+}
+
+
+.menu p{
+   
+    
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+  
+     color: #654c38;
+
+
+}
+
+
+
+#container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+     gap: 35px;
+  
+}
+
+/* card 1 */
+
+.card{
+  
+ width: 550px;
+  
+  overflow: hidden;
+  border-radius: 18px ;
+  background-color:   #fffaf2;
+  border: 1px solid #d8c1a5;
+   box-shadow: 0 8px 25px rgba(70, 45, 25, 0.15);
+
+}
+
+.card:hover {
+  
+    box-shadow: 0 15px 35px rgba(70, 45, 25, 0.25);
+}
+
+
+
+.images{
+ width: 100%;
+height: 300px;
+overflow: hidden;
+
+}
+
+.images img{
+ width: 100%;
+ height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.card-content{
+  
+   padding: 25px;
+    background-color: #fffaf2;
+
+    text-align: center;
+
+    min-height: 160px;  
+
+  
+}
+
+.card-content h2{
+   font-size: 27px;
+
+    margin-bottom: 15px;
+
+    color: #2f2118;
+}
+
+.card-content p{
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.6;
+
+    font-weight: 500;
+    font-style: italic;
+
+     color: #6b5542;
+
+}
+
+.btn{
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+     background-color: #f2dfc4;
+  padding: 15px 20px;
+  border-top: 1px solid #d4b895;
+
+}
+
+.btn span{
+    
+     color: #3b2a20;;
+     font-size: 21px;
+     font-weight: bold;
+}
+
+.btn button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b2a20;
+  
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: #725238;
+}
+
+/* footer */
+
+
+.footer {
+    margin-top: 60px;
+    background: #2f2118;
+    color: #f8f1e7;
+    padding-top: 45px;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-box h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.footer-box p {
+    color: #d8c8b8;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding: 18px;
+    text-align: center;
+
+    border-top: 1px solid #5a4536;
+}
+
+.footer-bottom p {
+    color: #cdbdae;
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer {
+        padding-top: 35px;
+    }
+}
+
+/* mobile */
+@media (max-width: 700px) {
+
+    #container {
+        width: 90%;
+        gap: 25px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .images {
+        height: 250px;
+    }
+
+    .menu .Title {
+        font-size: 30px;
+    }
+
+    .menu h1 {
+        font-size: 26px;
+    }
+
+    .menu p {
+        font-size: 16px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}
